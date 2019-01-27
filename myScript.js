@@ -1,10 +1,8 @@
 var savedSearches = [];
 
 var typewatch = function(){
-
 	var timer = 0;
     return function(callback, ms){
-        console.log(callback);
         clearTimeout (timer);
         timer = setTimeout(callback, ms);
     };
@@ -12,8 +10,6 @@ var typewatch = function(){
 
 executeQuery = (search = document.getElementById("userQuery").value) => {
 	
-	console.log("executeQuery timer");
-    console.log(search)
 	clearElements();
 	
 	var Http = new XMLHttpRequest();
@@ -107,7 +103,6 @@ const displayUserSearch = search =>
     document.getElementById("checkboxes").appendChild(labelSearch);
     document.getElementById("searchButton").style.visibility = "visible";
 	
-    console.log(savedSearches)
 }; 
 
 const mergeSearches = () => {
@@ -122,6 +117,5 @@ const mergeSearches = () => {
         
     });
     newQuery = newQuery.slice(",", -1);
-    console.log(newQuery);
     executeQuery(newQuery);
 }
