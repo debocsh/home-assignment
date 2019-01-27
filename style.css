@@ -1,0 +1,44 @@
+body {
+  background-color: white;
+}
+.intro {
+  color: black;
+  text-align: center;
+}
+#pictures {
+  margin: 5px;
+  float: left;
+}
+
+
+img {
+  padding: 5px;
+  height: 300px;
+  width: 400px;
+}
+
+.Searches {
+	text-align: left;
+	float: left;
+	padding: 50px;	
+ 
+}
+
+#searchButton {
+    
+    visibility: hidden;
+    margin-top: 15px;
+
+}
+#text, label{
+    
+    color: black;
+    font-family: arial, verdana, sans-serif;    
+    text-align: left;
+	padding: 10px;
+
+}
+
+
+
+

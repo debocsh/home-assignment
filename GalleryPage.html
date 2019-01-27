@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <head>
+      <title>Image Gallery</title>
+      <meta name="description" content="web image gallery" />
+      <meta name="author" content="Deborah Cohen-Salmon" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta charset="utf-8" />
+      <link rel="stylesheet" href="style.css" />
+      <script src="myScript.js"></script>
+    </head>
+
+    <div class="intro">
+      <h1>Image Gallery</h1>
+      <form method="post" name="myForm">
+        <input
+          type="text"
+          name="user_query"
+          id="userQuery"
+          placeholder="search for images..."
+          autocomplete="on"
+          onkeyup="typewatch('executeQuery()', 500);"
+        />
+		<button type ="button" name="button" onclick="saveUserSearch()">Save my search</button>   		
+	</form>
+	
+	<p id="none"></p>
+    
+	<div class="Searches" id="savedSearches">
+        <p id="text"></p>
+        <div id="checkboxes"> </div>
+        <div id= "Selection"> 
+        <button type ="button" id="searchButton" onclick="mergeSearches()"> Merge all searches</button> 
+        </div>
+    </div>
+
+	<div id="pictures"></div>
+    </div>
+  </body>
+</html>
