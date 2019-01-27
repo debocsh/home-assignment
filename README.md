@@ -7,6 +7,7 @@ Frameworks used: HTML, CSS, JavaScript
 Run: Launch the html file into a browser of your choice
 
 The files:
+
 GalleryPage.html : content of the web page. When launched for the first time, 
 there's only a title, a box for entering the search and a button for saving this 
 search. 
@@ -17,6 +18,7 @@ The style of the elements present in the Html page e.g the size of the images to
 display, the alignement of the elements and so on 
 
 myScript.js: the behaviour of the Html actions
+
 typewatch function: set a timer when a the user types and call executeQuery to 
 start the search for the user's input after 500ms
 
