@@ -1,6 +1,6 @@
 var savedSearches = [];
 
-var typewatch = () => {
+var typewatch = function () {
 	
 	var timer = 0;
     return function(callback, ms){
