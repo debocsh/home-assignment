@@ -1,8 +1,7 @@
 var savedSearches = [];
 
 var typewatch = function(){
-	
-	console.log("in_timer");
+
 	var timer = 0;
     return function(callback, ms){
         console.log(callback);
@@ -70,7 +69,7 @@ const clearElements = () => {
 
 const saveUserSearch = () => {
   
-  var search = document.getElementById("user_query").value;
+  var search = document.getElementById("userQuery").value;
   const storedValue = JSON.parse(window.localStorage.getItem("userSearch"));
   
   if (storedValue == null) {
