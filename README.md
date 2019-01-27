@@ -3,6 +3,7 @@
 Implement an Image Gallery from Scratch:
 
 Frameworks used: HTML, CSS, JavaScript
+
 Run: Launch the html file into a browser of your choice
 
 The files:
